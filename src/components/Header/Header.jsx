@@ -3,38 +3,39 @@ import { FaShoppingCart } from "react-icons/fa";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Logo from "../../assets/img/LogoEatly.svg";
 import "../Header/Header.scss";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="Header ">
+    <div className="Header">
       <div className="Navbar container">
         <div className="NavbarLeft">
           <div className="Logo">
-            <a href="#">
+            <NavLink to="/home">
               <img src={Logo} alt="LogoEatly" />
-            </a>
+            </NavLink>
             <h2>eatly</h2>
           </div>
           <ul className="ListItem">
             <li>
-              <a href="#">Home</a>
+              <NavLink to="/home">Home</NavLink>
             </li>
             <li>
-              <a href="#">Dishes</a>
+              <NavLink to="/dishes">Dishes</NavLink>
             </li>
           </ul>
         </div>
 
         <div className="NavbarRight">
-          <a href="#">
+          <NavLink to="/dishesShop">
             <FaShoppingCart />
-          </a>
-          <a href="#" className="Login">
+          </NavLink>
+          <NavLink to="/login" className="Login">
             Login
-          </a>
-          <a href="#" className="SignUp">
+          </NavLink>
+          <NavLink to="/register" className="SignUp">
             Sign Up
-          </a>
+          </NavLink>
         </div>
         <div className="BurgerBtn">
           <button>
