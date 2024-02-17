@@ -8,28 +8,30 @@ import "../Footer/Footer.scss";
 
 const Footer = () => {
   return (
-    <div className="Footer container">
-      <div className="Logo">
-        <a href="#">
-          <img src={Logo} alt="LogoEatly" />
-        </a>
-        <h2>eatly</h2>
-      </div>
-      <div className="SetSiteFooter">
-        <p>© 2023 EATLY All Rights Reserved.</p>
-        <div className="IconSites">
+    <div className="Footer ">
+      <div className="container">
+        <div className="Logo">
           <a href="#">
-            <FaInstagram />
+            <img src={Logo} alt="LogoEatly" />
           </a>
-          <a href="#">
-            <FaFacebookSquare />
-          </a>
-          <a href="#">
-            <FaLinkedin />
-          </a>
-          <a href="#">
-            <FaTwitter />
-          </a>
+          <h2>eatly</h2>
+        </div>
+        <div className="SetSiteFooter">
+          <p>© 2023 EATLY All Rights Reserved.</p>
+          <div className="IconSites">
+            <a href="#">
+              <FaInstagram />
+            </a>
+            <a href="#">
+              <FaFacebookSquare />
+            </a>
+            <a href="#">
+              <FaLinkedin />
+            </a>
+            <a href="#">
+              <FaTwitter />
+            </a>
+          </div>
         </div>
       </div>
     </div>

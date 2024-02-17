@@ -8,7 +8,7 @@ import { NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <div className="Header">
-      <div className="Navbar container">
+      <div className="Navbar container d-flex  align-items-center">
         <div className="NavbarLeft">
           <div className="Logo">
             <NavLink to="/home">

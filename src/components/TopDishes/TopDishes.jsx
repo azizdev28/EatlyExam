@@ -118,6 +118,210 @@ const TopDishes = () => {
             </button>
           </div>
         </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
+        <div className="DishesCard">
+          <img src={Second} alt="Our Top Dishes" />
+          <span> Healthy</span>
+          <h3>Chicken Hell</h3>
+          <p>
+            24min •<FaStar /> 4.8
+          </p>
+
+          <div className="BtnShop">
+            <h4>
+              $12.<p className="SenaSpan">99</p>
+            </h4>
+            <button className="FaPlusCircleBtn">
+              <FaPlusCircle className="FaPlusCircle" />
+            </button>
+          </div>
+        </div>
       </div>
     </div>
   );
