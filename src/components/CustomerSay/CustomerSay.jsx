@@ -15,8 +15,10 @@ const CustomerSay = () => {
     slidesToScroll: 1,
   };
   return (
-    <div>
-      <h2>CustomerSay</h2>
+    <div className="CustomerSay">
+      <h2>
+        Customer <span>Say</span>
+      </h2>
 
       <div className="ListCardSay">
         <div className="CardSay">
