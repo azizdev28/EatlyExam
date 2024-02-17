@@ -9,6 +9,7 @@ import PhoneMainImage from "../../assets/img/PhoneMainImage.png";
 import BgImg from "../../assets/img/BgImg.png";
 import TopDishes from "../TopDishes/TopDishes";
 import Purchases from "../Purchases/Purchases";
+import CustomerSay from "../CustomerSay/CustomerSay";
 const Main = () => {
   return (
     <div className="container ">
@@ -94,12 +95,16 @@ const Main = () => {
         </div>
       </div>
 
-      <div className="container">
+      <div>
         <TopDishes />
       </div>
 
-      <div className="container">
+      <div>
         <Purchases />
+      </div>
+
+      <div>
+        <CustomerSay />
       </div>
     </div>
   );
