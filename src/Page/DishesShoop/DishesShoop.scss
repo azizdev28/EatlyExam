@@ -65,3 +65,103 @@
     width: 100px;
   }
 }
+
+@media screen and (min-width: 375px) and (max-width: 678px) {
+  .DishesShoopCard {
+    display: flex;
+    width: 315px;
+    height: 109px;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+
+    align-items: center;
+
+    h3 {
+      font-family: Poppins;
+      font-size: 13px;
+      font-weight: 600;
+      line-height: 18px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+
+    p {
+      font-family: Poppins;
+      font-size: 11px;
+      font-weight: 600;
+      line-height: 15px;
+      letter-spacing: 0px;
+      text-align: left;
+    }
+  }
+
+  .shoopCardSave {
+    display: flex;
+    align-items: center;
+  }
+  .DishesShoopCards {
+    max-width: 315px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 200px auto;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .ShoopCaunt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    span {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-width: 0px, 0px, 0px, 0px;
+        border-style: solid;
+        border-color: #323142;
+        width: 20.36px;
+        height: 20.54px;
+        border-radius: 6px;
+
+        &:hover {
+          background-color: #323142;
+          color: #fff;
+        }
+      }
+
+      h3 {
+        font-family: Poppins;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 18px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+
+      p {
+        font-family: Poppins;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 15px;
+        letter-spacing: 0px;
+        text-align: left;
+      }
+    }
+  }
+
+  .shoopCardSave {
+    img {
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
