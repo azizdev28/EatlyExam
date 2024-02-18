@@ -1,7 +1,6 @@
 import React from "react";
 import Accordion from "react-bootstrap/Accordion";
 import TopDishes from "../../components/TopDishes/TopDishes";
-
 import "../Dishes/Dishes.scss";
 const Dishes = () => {
   return (

@@ -13,29 +13,23 @@ import Register from "./Page/Register/Register";
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-
   useEffect(() => {
-    // localStorage-dan isLoggedIn ma'lumotini olish
     const loggedIn = localStorage.getItem("isLoggedIn");
     if (loggedIn === "true") {
       setIsLoggedIn(true);
     }
   }, []);
-
   return (
     <>
       <BrowserRouter>
         <ToastContainer />
         <Header />
         <Routes>
-          {/* Login sahifasi */}
           <Route
             path="/login"
             element={<Login setIsLoggedIn={setIsLoggedIn} />}
           />
-          {/* Register sahifasi */}
           <Route path="/register" element={<Register />} />
-          {/* Home sahifasi */}
           <Route
             path="/"
             element={isLoggedIn ? <Home /> : <Navigate to="/login" />}
@@ -44,7 +38,6 @@ function App() {
             path="dishes"
             element={isLoggedIn ? <Dishes /> : <Navigate to="/login" />}
           />
-          {/* DishesShop sahifasi */}
           <Route
             path="/dishesshop"
             element={isLoggedIn ? <DishesShop /> : <Navigate to="/login" />}

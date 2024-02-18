@@ -8,35 +8,33 @@ const Register = () => {
   const [fullName, setFullName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [error, setError] = useState(""); // Error holati
+  const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const handleRegister = (e) => {
     e.preventDefault();
-    // Ma'lumotlarni tekshirish
+
     if (!fullName || !email || !password) {
       setError("Iltimos, barcha maydonlarni to'ldiring");
       return;
     }
 
-    // Foydalanuvchi kiritgan ma'lumotlarni saqlash
     localStorage.setItem("fullName", fullName);
     localStorage.setItem("email", email);
     localStorage.setItem("password", password);
-    // Xabar chiqarish
+
     toast.success("Tabriklaymiz, siz ro'yxatdan o'tdingiz !!!");
-    // Ma'lumotlarni tozalash
+
     setFullName("");
     setEmail("");
     setPassword("");
-    // Kirish sahifasiga qaytish
+
     navigate("/login");
   };
 
   return (
     <div className="RegisterPage">
       <form onSubmit={handleRegister}>
-        {/* Xatolarni chiqarish */}
         {error && <p className="error">{error}</p>}
         <input
           type="text"

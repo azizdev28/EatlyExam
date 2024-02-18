@@ -10,15 +10,12 @@ const Login = ({ setIsLoggedIn }) => {
 
   const handleLogin = (e) => {
     e.preventDefault();
-    // localStorage dan foydalanuvchi ma'lumotlarini olish
     const storedEmail = localStorage.getItem("email");
     const storedPassword = localStorage.getItem("password");
-    // Foydalanuvchi kiritgan ma'lumotlar bilan localStorage da saqlangan ma'lumotlarni solishtiramiz
     if (email === storedEmail && password === storedPassword) {
-      // Agar ma'lumotlar mos tushsa, foydalanuvchi kirgan sifatida belgilaymiz
       toast.success("Muvofaqiyatli amalga oshirildi !!!");
       setIsLoggedIn(true);
-      // Home sahifasiga o'tish
+
       navigate("/");
     } else {
       toast.error("Email yoki Parol xato");
