@@ -10,6 +10,7 @@ const TopDishes = () => {
   const { products, fetchProducts } = useProductStore();
   const [isLoading, setIsLoading] = useState(true);
   const [pageNumber, setPageNumber] = useState(0);
+  const [searchTerm, setSearchTerm] = useState("");
   const productsPerPage = 10;
 
   useEffect(() => {
@@ -23,17 +24,28 @@ const TopDishes = () => {
   const startIndex = pageNumber * productsPerPage;
   const endIndex = startIndex + productsPerPage;
 
+  const filteredProducts = products.filter((product) =>
+    product.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
   return (
     <div className="TopDishes">
       <h2>
         Our Top <span className="SpanHeading">Dishes</span>
       </h2>
-
+      <div>
+        <input
+          type="text"
+          placeholder="Search"
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+        />
+      </div>
       <div className="DishesGrid">
-        {products.length === 0 ? (
-          <LoadingPage />
+        {filteredProducts.length === 0 ? ( // Qidirilgan mahsulotlar ro'yxati bo'sh bo'lsa
+          <p>No dishes found.</p>
         ) : (
-          products.slice(startIndex, endIndex).map((product) => (
+          filteredProducts.slice(startIndex, endIndex).map((product) => (
             <div className="DishesCard" key={product.id}>
               <img src={product.img} alt="Our Top Dishes" />
               <span>{product.status}</span>
@@ -57,7 +69,7 @@ const TopDishes = () => {
         previousLabel={"previous"}
         nextLabel={"next"}
         breakLabel={"..."}
-        pageCount={Math.ceil(products.length / productsPerPage)}
+        pageCount={Math.ceil(filteredProducts.length / productsPerPage)}
         marginPagesDisplayed={2}
         pageRangeDisplayed={5}
         onPageChange={handlePageClick}
