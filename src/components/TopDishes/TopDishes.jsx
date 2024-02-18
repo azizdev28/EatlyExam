@@ -1,277 +1,69 @@
-import React from "react";
-import { FaStar } from "react-icons/fa";
-import { FaPlusCircle } from "react-icons/fa";
+import React, { useState, useEffect } from "react";
+import { FaStar, FaPlusCircle } from "react-icons/fa";
+import ReactPaginate from "react-paginate";
+import LoadingPage from "../LoadingPage";
+import useProductStore from "../../app/store";
 import "../TopDishes/TopDishes.scss";
-// import Main from "../Main/Main";
-import First from "../../assets/img/First.png";
-import Second from "../../assets/img/Second.png";
-import Threeth from "../../assets/img/Threeth.png";
-// import Second from "../../assets/img/Second.png";
+import DishesShoop from "../../Page/DishesShoop/DishesShoop";
 
 const TopDishes = () => {
+  const { products, fetchProducts } = useProductStore();
+  const [isLoading, setIsLoading] = useState(true);
+  const [pageNumber, setPageNumber] = useState(0);
+  const productsPerPage = 10;
+
+  useEffect(() => {
+    fetchProducts();
+  }, []);
+
+  const handlePageClick = ({ selected }) => {
+    setPageNumber(selected);
+  };
+
+  const startIndex = pageNumber * productsPerPage;
+  const endIndex = startIndex + productsPerPage;
+
   return (
-    <div className=" TopDishes">
+    <div className="TopDishes">
       <h2>
         Our Top <span className="SpanHeading">Dishes</span>
       </h2>
 
       <div className="DishesGrid">
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
-        <div className="DishesCard">
-          <img src={Second} alt="Our Top Dishes" />
-          <span> Healthy</span>
-          <h3>Chicken Hell</h3>
-          <p>
-            24min •<FaStar /> 4.8
-          </p>
-
-          <div className="BtnShop">
-            <h4>
-              $12.<p className="SenaSpan">99</p>
-            </h4>
-            <button className="FaPlusCircleBtn">
-              <FaPlusCircle className="FaPlusCircle" />
-            </button>
-          </div>
-        </div>
+        {products.length === 0 ? (
+          <LoadingPage />
+        ) : (
+          products.slice(startIndex, endIndex).map((product) => (
+            <div className="DishesCard" key={product.id}>
+              <img src={product.img} alt="Our Top Dishes" />
+              <span>{product.status}</span>
+              <h3>{product.name}</h3>
+              <p>
+                {product.time}
+                <FaStar /> {product.star}
+              </p>
+              <div className="BtnShop">
+                <h4>{product.price}</h4>
+                <button className="FaPlusCircleBtn">
+                  <FaPlusCircle className="FaPlusCircle" />
+                </button>
+              </div>
+            </div>
+          ))
+        )}
       </div>
+
+      <ReactPaginate
+        previousLabel={"previous"}
+        nextLabel={"next"}
+        breakLabel={"..."}
+        pageCount={Math.ceil(products.length / productsPerPage)}
+        marginPagesDisplayed={2}
+        pageRangeDisplayed={5}
+        onPageChange={handlePageClick}
+        containerClassName={"pagination"}
+        activeClassName={"active"}
+      />
     </div>
   );
 };
