@@ -1,0 +1,124 @@
+{
+  "products": [
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "4.9",
+      "price": "$12.99",
+      "img": "src/assets/img/hero.png"
+    },
+    {
+      "status": "Trending",
+      "name": "Swe Dish",
+      "time": "34min",
+      "star": "4.9",
+      "price": "$19.99",
+      "img": "src/assets/img/Food Image (8).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "24min",
+      "price": "$12.99",
+      "img": "src/assets/img/Food Image (9).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "24min",
+      "price": "$12.99",
+      "img": "src/assets/img/Food Image (10).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "24min",
+      "price": "$12.99",
+      "img": "src/assets/img/Food Image (9).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "4.9",
+      "price": "$12.99",
+      "img": "src/assets/img/hero.png"
+    },
+    {
+      "status": "Trending",
+      "name": "Swe Dish",
+      "time": "34min",
+      "star": "4.9",
+      "price": "$19.99",
+      "img": "src/assets/img/Food Image (8).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "24min",
+      "price": "$12.99",
+      "img": "src/assets/img/Food Image (9).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "24min",
+      "price": "$12.99",
+      "img": "src/assets/img/Food Image (10).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "24min",
+      "price": "$12.99",
+      "img": "src/assets/img/Food Image (9).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "4.9",
+      "price": "$12.99",
+      "img": "src/assets/img/hero.png"
+    },
+    {
+      "status": "Trending",
+      "name": "Swe Dish",
+      "time": "34min",
+      "star": "4.9",
+      "price": "$19.99",
+      "img": "src/assets/img/Food Image (8).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "24min",
+      "price": "$12.99",
+      "img": "src/assets/img/Food Image (9).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "24min",
+      "price": "$12.99",
+      "img": "src/assets/img/Food Image (10).png"
+    },
+    {
+      "status": "Healthy",
+      "name": "Chicken Hell",
+      "time": "24min",
+      "star": "24min",
+      "price": "$12.99",
+      "img": "src/assets/img/Food Image (9).png"
+    }
+  ]
+}

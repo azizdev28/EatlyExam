@@ -41,6 +41,24 @@ const DishesShoop = () => {
             </div>
           </div>
         </div>
+
+        <div className="ProductPrice">
+          <ul>
+            <li>
+              <h3>Subtotal</h3>
+              <p>$58.96</p>
+            </li>
+            <li>
+              <h3>Delivery</h3>
+              <p>$3.59</p>
+            </li>
+            <span>
+              <h2>Total</h2>
+              <p>$62.55</p>
+            </span>
+            <button>Review Payment</button>
+          </ul>
+        </div>
       </div>
     </div>
   );
